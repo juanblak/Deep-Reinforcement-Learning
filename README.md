@@ -1,6 +1,6 @@
 # Deep-Reinforcement-Learning
 
-Tensorflow based Deeo Q Network
+Tensorflow based Deep Q Network
 
 High Correlation Data Removing Method for Deep Reinforcement Learning in Obstacle Avoidance and Path Planning    
 
