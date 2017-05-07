@@ -1,9 +1,6 @@
 """
-Using:
-Tensorflow: 1.0
-gym: 0.7.3
+Using:Tensorflow: 1.0 gym: 0.7.3
 """
-
 import gym
 from RL_brain import DeepQNetwork
 
@@ -29,11 +26,8 @@ for i_episode in range(100):
     ep_r = 0
     while True:
         env.render()
-
         action = RL.choose_action(observation)
-
         observation_, reward, done, info = env.step(action)
-
         # the smaller theta and closer to center the better
         x, x_dot, theta, theta_dot = observation_
         r1 = (env.x_threshold - abs(x))/env.x_threshold - 0.8
@@ -54,5 +48,5 @@ for i_episode in range(100):
 
         observation = observation_
         total_steps += 1
-
+        
 RL.plot_cost()
